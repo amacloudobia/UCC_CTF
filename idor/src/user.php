@@ -3,7 +3,7 @@
 $usersFile = __DIR__ . "/database/users.json";
 
 // Define the flag
-$flag = "Uguntu{insecure_direct_object_reference}";
+$flag = "Uguntu{boss_did_you_ever_heard_of_IDOR}";
 
 // Get the user_id from the query string
 $userId = $_GET['user_id'] ?? null;
