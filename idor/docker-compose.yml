@@ -1,0 +1,7 @@
+version: '3'
+services:
+  idor_challenge:
+    build: .
+    ports:
+      - "3000:80"
+    container_name: idor_challenge
