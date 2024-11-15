@@ -1,0 +1,11 @@
+FROM php:7.4-apache
+
+COPY index.html /var/www/html/
+
+COPY login.php /var/www/html/
+
+COPY flag.txt /var/www/html/flag.txt
+
+EXPOSE 80
+
+CMD ["apache2ctl", "-D", "FOREGROUND"]
