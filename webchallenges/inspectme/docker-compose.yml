@@ -1,0 +1,7 @@
+version: '3'
+services:
+  php_cookie_challenge:
+    build: .
+    ports:
+      - "300:80"
+    container_name: php_cookie_challenge
