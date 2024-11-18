@@ -1,0 +1,12 @@
+FROM php:7.4-apache
+
+# Set the flag in an environment variable
+ENV FLAG="uguntu{LLM_prompt_injection_nothing_is_secure_in_this_era}"
+
+COPY index.php /var/www/html/
+
+# Expose port
+EXPOSE 80
+
+# Start Apache
+CMD ["apache2ctl", "-D", "FOREGROUND"]

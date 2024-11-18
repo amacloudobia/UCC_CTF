@@ -1,0 +1,14 @@
+FROM php:7.4-apache
+
+# Copy application files
+COPY index.html /var/www/html/
+COPY login.php /var/www/html/
+
+# Set permissions for the Apache web server
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose the server's port
+EXPOSE 80
+
+# Start the Apache server
+CMD ["apache2ctl", "-D", "FOREGROUND"]
